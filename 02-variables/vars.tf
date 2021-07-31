@@ -41,3 +41,15 @@ variable "TRAINING-DETAILS" {
   }
 }
 
+output "FIRST-TRAINING" {
+  value = var.TRAINING[0]
+}
+
+output "SECOND-TRAINING" {
+  value = var.TRAINING[1]
+}
+
+output "TRAINING-DETAILS" {
+  value = "AWS TIMING - ${var.TRAINING-DETAILS["AWS"]}"
+}
+
