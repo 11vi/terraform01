@@ -23,3 +23,18 @@ output "number" {
 output "booleam" {
   value = "false"
 }
+
+variable "TRAINING" {
+  default = "DevOps"
+}
+
+variable "TRAINING" {
+  default = ["DevOps,aws"]
+}
+
+variable "TRAINING-DETAILS" {
+  default = {aws -"6am est"
+             DevOps "8am est"
+  }
+}
+
