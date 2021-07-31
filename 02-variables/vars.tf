@@ -36,8 +36,8 @@ variable "TRAINING" {
 
 variable "TRAINING-DETAILS" {
   default = {
-             aws -"6am est"
-             DevOps -"8am est"
+             aws ="6am est"
+             DevOps ="8am est"
   }
 }
 
