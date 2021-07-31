@@ -33,8 +33,8 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
-output "ec2-attributes" {
-  value = "aws_instance.sample"
+output "sg-attributes" {
+  value = "aws_instance.allow_ssh"
 }
 provider "aws" {
   region ="us-east-1"
