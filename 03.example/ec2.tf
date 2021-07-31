@@ -1,12 +1,12 @@
-//resource "aws_instance" "sample" {
-  //ami                   = ""
-  //instance_type         = "t3.micro"
-  //vpc_security_group_ids = []
+resource "aws_instance" "sample" {
+  ami                   = "ami-074df373d6bafa625"
+  instance_type         = "t3.micro"
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
-  //tags                  = {
-    //Name                = "Sample"
-  //}
-//}
+  tags                  = {
+    Name                = "Sample"
+  }
+}
 
 
 resource "aws_security_group" "allow_ssh" {
@@ -33,7 +33,11 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
-output "sg-attributes" {
-  value = "aws_security_group.allow_ssh"
+output "ec2-attributes" {
+  value = "aws_instance.sample"
 }
+provider "aws" {
+  region ="us-east-1"
+}
+
 
