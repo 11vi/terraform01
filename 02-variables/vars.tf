@@ -55,7 +55,7 @@ output "TRAINING-DETAILS" {
 
 variable "FRUITS" {}
 
-output "FRUITS" {
+output "FRUITS1" {
   value = var.FRUITS
 }
 
@@ -63,4 +63,7 @@ variable "COUNTRY" {}
 output "COUNTRY" {
   value = var.COUNTRY
 }
-
+variable "FRUITS2" {}
+output "FRUITS" {
+  value = var.FRUITS
+}
