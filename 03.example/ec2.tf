@@ -23,7 +23,7 @@ resource "aws_security_group" "allow_ssh" {
 
   egress {
     from_port           = 0
-    to_port             = 65535
+    to_port             = 0
     protocol            = "-1"
     cidr_blocks         = ["0.0.0.0/0"]
   }
@@ -36,7 +36,7 @@ resource "aws_security_group" "allow_ssh" {
 output "ec2-attributes" {
   value = "aws_instance.sample"
 }
-provider "AWS" {
+provider "aws" {
   region ="us-east-1"
 }
 
