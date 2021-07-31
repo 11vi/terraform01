@@ -6,6 +6,6 @@ resource "aws_instance" "sample" {
   }
 }
 
-provider "AWS" {
+provider "aws" {
   region = "us-east-1"
 }
