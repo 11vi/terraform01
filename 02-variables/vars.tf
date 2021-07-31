@@ -46,7 +46,7 @@ output "FIRST-TRAINING" {
 }
 
 output "SECOND-TRAINING" {
-  value = var.TRAINING1[1]
+  value = var.TRAINING[1]
 }
 
 output "TRAINING-DETAILS" {
