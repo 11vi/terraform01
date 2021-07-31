@@ -37,7 +37,3 @@ output "sg-attributes" {
   value = "aws_security_group.allow_ssh"
 }
 
-provider "aws" :
-  region = "us-east-1"
-}
-
