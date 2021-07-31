@@ -24,7 +24,9 @@ output "booleam" {
   value = "false"
 }
 
-variable "TRAINING" {
+
+
+variable "TRAINING1" {
   default = "DevOps"
 }
 
@@ -33,8 +35,9 @@ variable "TRAINING" {
 }
 
 variable "TRAINING-DETAILS" {
-  default = {aws -"6am est"
-             DevOps "8am est"
+  default = {
+             aws -"6am est"
+             DevOps -"8am est"
   }
 }
 
