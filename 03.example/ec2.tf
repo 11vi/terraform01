@@ -1,6 +1,6 @@
 resource "aws_instance" "sample" {
   ami                   = "ami-074df373d6bafa625"
-  instance_type         = "t3.micro"
+  instance_type         = "t3.medium"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags                  = {
