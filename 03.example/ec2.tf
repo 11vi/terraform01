@@ -1,12 +1,14 @@
-resource "aws_instance" "sample" {
-  ami                   = ""
-  instance_type         = "t3.micro"
-  vpc_security_group_ids = []
+//resource "aws_instance" "sample" {
+  //ami                   = ""
+  //instance_type         = "t3.micro"
+  //vpc_security_group_ids = []
 
-  tags                  = {
-    Name                = "Sample"
-  }
-}
+  //tags                  = {
+    //Name                = "Sample"
+  //}
+//}
+
+
 resource "aws_security_group" "allow_ssh" {
   name                  = "allow_ssh"
   description           = "allow_ssh"
